@@ -2,6 +2,8 @@ source "https://rubygems.org"
 
 #gem "chef", "~> 11.0"
 gem "chef", "~> 12.7"
+#*WARNING: Chef v12 breaks everyhting related to the way users work in Kitchenplan. Please update your Gemfile to look like:*
+#...MAYBE my fixes in mac_os_x make this sane, just NEVER use node['current_user'] only use the mac_os_x][user]
 gem 'librarian-chef', '~> 0.0.4'
 gem 'rack', '~> 1.6.4'
 
